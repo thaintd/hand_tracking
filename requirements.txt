@@ -4,3 +4,6 @@ gunicorn
 opencv-python
 numpy
 mediapipe
+uvicorn[standard]
+websockets
+wsproto
