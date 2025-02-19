@@ -82,8 +82,8 @@ async def websocket_endpoint(websocket: WebSocket):
         encoded_img = base64.b64encode(buffer).decode('utf-8')
         await websocket.send_text(encoded_img)
 
-# if __name__ == "__main__":
-#     uvicorn.run("main:app", host="0.0.0.0", port=10000, reload=True)
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=10000, reload=True)
 
 # import cv2
 # import mediapipe as mp
